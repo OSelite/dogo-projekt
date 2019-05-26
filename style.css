@@ -1,0 +1,245 @@
+body {
+    margin: 0 auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    top: 0;
+    display: flex;
+    font-family: 'Indie Flower', cursive;
+    justify-content: space-evenly;
+    align-items: baseline;
+    font-size: 25px;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    padding-bottom: 10px;
+    transition: all 0.5s ease-out;
+}
+
+nav.scroll {
+    background-color: rgba(223, 219, 219, 0.986);
+    box-shadow: 0px 4px 7px #777;
+    font-weight: bold;
+}
+
+nav a:link{
+    text-decoration: none;
+    color: black;
+}
+
+nav a:visited {
+    color: black;
+}
+
+nav a:hover {
+    color: rgb(65, 29, 0);
+    transition: 0.5s;
+}
+
+
+#logo {
+    padding-top: 10px;
+
+}
+
+#left {
+    float: left;
+    width: 50vw;
+    height: 100vh;
+    background-image: url(zdj/dog3_trans.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+#right {
+    float: left;
+    width: 50vw;
+    height: 100vh;
+}
+
+.banner {
+    text-align: center;
+    padding-top: 40%;
+    padding-left: 10%;
+    font-family: 'Indie Flower', cursive;
+    font-size: 50px;
+}
+
+#topdiv{
+    clear: both;
+    width: 100vw;
+    height: 70px;
+    left: 0px;
+    background: linear-gradient(to left bottom, #fff 49%, rgba(211, 211, 211, 0.384) 50%);
+}
+
+#about {
+    width: 100vw;
+}
+
+#about-left {
+    float: left;
+    background-color: rgba(211, 211, 211, 0.384);
+    width: 40%;
+    height: 60vh;
+    text-align: left;
+}
+
+.aboutheader {
+    font-family: 'Indie Flower', cursive;
+    padding-top: 10%;
+    padding-left: 10%;
+    font-size: 50px;
+}
+
+.aboutxt {
+    font-family: 'Prompt', sans-serif;
+    padding-left: 10%;
+    font-size: 20px;
+}
+
+#aboutcat {
+    width: 60%;
+    height: 60vh;
+    float: left;
+    background-image: url(zdj/cat1_trans.png);
+    background-repeat: no-repeat;
+    background-color: rgba(211, 211, 211, 0.384);
+    background-position: center;
+}
+
+#bottomdiv {
+    clear: both;
+    width: 100vw;
+    height: 70px;
+    left: 0px;
+    background: linear-gradient(to right bottom, rgba(211, 211, 211, 0.384) 49%, #fff 50%),    linear-gradient( -50deg, #ffffff 16px, #fff 0);
+}
+
+#details {
+    width: 100vw;
+    display: flex;
+    font-family: 'Indie Flower', cursive;
+    justify-content: space-evenly;
+    /*align-items: baseline;*/
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#health {
+    width: 20vw;
+    height: 400px;
+    box-shadow: 0px 4px 7px #777;
+    padding: 2px;
+    transition: all 0.5s ease-in-out;
+}
+
+#health h1 {
+    font-size: 35px;
+    margin-bottom: -10px;
+}
+
+#health p {
+    padding-top: 10px;
+    font-family: 'Prompt', sans-serif;
+}
+
+#health:hover  {
+    background-color: rgba(211, 211, 211, 0.384);
+    transform: scale(1.1);
+}
+
+#beauty {
+    width: 20vw;
+    height: 400px;
+    box-shadow: 0px 4px 7px #777;
+    padding: 2px;
+    transition: all 0.5s ease-in-out;
+}
+
+#beauty h1 {
+    font-size: 35px;
+    margin-bottom: -10px;
+}
+
+#beauty p {
+    padding-top: 10px;
+    font-family: 'Prompt', sans-serif;
+}
+
+#beauty:hover  {
+    transition: all 0.5s ease-in-out;
+    background-color: rgba(211, 211, 211, 0.384);
+    transform: scale(1.1);
+}
+
+#relax {
+    width: 20vw;
+    height: 400px;
+    box-shadow: 0px 4px 7px #777;
+    padding: 2px;
+    transition: all 0.5s ease-in-out;
+}
+
+#relax h1 {
+    font-size: 35px;
+    margin-bottom: -10px;
+}
+
+#relax p {
+    padding-top: 10px;
+    font-family: 'Prompt', sans-serif;
+}
+
+#relax:hover  {
+    transition: all 0.5s ease-in-out;
+    background-color: rgba(211, 211, 211, 0.384);
+    transform: scale(1.1);
+}
+
+#team {
+    width: 100vw;
+    display: flex;
+    font-family: 'Indie Flower', cursive;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: rgba(211, 211, 211, 0.384);
+}
+
+#team div {
+    background-color: blue;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    box-shadow: 0px 4px 7px #777;
+}
+
+.person1 {
+    background-image: url("zdj/person1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.person2 {
+    background-image: url("zdj/person2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.person3 {
+    background-image: url("zdj/person3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#stopka {
+    clear: both;
+    background-color: green;
+    height: 500px;
+    width: 100vw;
+}
