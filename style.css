@@ -205,7 +205,6 @@ nav a:hover {
 #team {
     width: 100vw;
     display: flex;
-    font-family: 'Indie Flower', cursive;
     justify-content: space-evenly;
     text-align: center;
     background-color: rgba(211, 211, 211, 0.384);
@@ -214,8 +213,8 @@ nav a:hover {
 #team div {
     background-color: blue;
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     box-shadow: 0px 4px 7px #777;
 }
 
@@ -235,6 +234,21 @@ nav a:hover {
     background-image: url("zdj/person3.png");
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.under {
+    text-align: center;
+    background-color: rgba(211, 211, 211, 0.384);
+}
+
+.under-h {
+    font-family: 'Indie Flower', cursive;
+    font-size: 40px;
+}
+
+.under-p {
+    font-family: 'Prompt', sans-serif;
+    font-size: 20px;
 }
 
 #stopka {
