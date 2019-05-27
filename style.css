@@ -251,9 +251,75 @@ nav a:hover {
     font-size: 20px;
 }
 
-#stopka {
-    clear: both;
-    background-color: green;
-    height: 500px;
+#contact {
     width: 100vw;
+}
+
+#contact-image {
+    float: left;
+    width: 60%;
+    height: 60vh;
+    background-image: url(zdj/dog1_cut.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#contact-text {
+    float: left;
+    width: 40%;
+}
+
+#join {
+    width: 100vw;
+}
+
+#join-text {
+    float: left;
+    width: 40%;
+    height: 60vh;
+    background-color: rgba(211, 211, 211, 0.384);
+}
+
+.joinheader {
+    font-family: 'Indie Flower', cursive;
+    padding-top: 1%;
+    padding-left: 10%;
+    font-size: 50px;
+}
+
+#join-image {
+    float: left;
+    width: 60%;
+    height: 60vh;
+    background-image: url(zdj/dog-end_trans.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(211, 211, 211, 0.384);
+}
+
+#join-button {
+    background-color: white;
+    box-shadow: 0px 4px 7px #777;
+    width: 100px;
+    text-align: center;
+    font-family: 'Prompt', sans-serif;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 17px;
+    margin-left: 4vw;
+    transition: all 0.2s ease-in-out;
+}
+
+#join-button:hover {
+    transform: scale(1.05);
+}
+
+#join a:link {
+    color: black;
+    text-decoration: none;
+}
+
+#join a:visited {
+    color: black;
+    text-decoration: none;
 }
