@@ -121,18 +121,17 @@ nav a:hover {
 }
 
 #details {
-    width: 100vw;
+    width: 100%;
     display: flex;
     font-family: 'Indie Flower', cursive;
     justify-content: space-evenly;
-    /*align-items: baseline;*/
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
 #health {
-    width: 20vw;
+    width: 20%;
     height: 400px;
     box-shadow: 0px 4px 7px #777;
     padding: 2px;
@@ -322,4 +321,37 @@ nav a:hover {
 #join a:visited {
     color: black;
     text-decoration: none;
+}
+
+@media screen and (max-width: 1000px) {
+
+    #left {
+        display: none;
+    }
+
+    #right {
+        display: block;
+        width: 60%;
+        height: 100%;
+        margin-left: 15%;
+    }
+    
+    #aboutcat {
+        display: none;
+    }
+
+    #about-left {
+        width: 100%;
+    }
+
+    #details {
+        flex-direction: column;
+    }
+
+    #health, #beauty, #relax {
+        width: 40%;
+        margin-bottom: 2%;
+        margin-left: 30%;
+    }
+
 }
