@@ -48,7 +48,7 @@ nav a:hover {
 
 #left {
     float: left;
-    width: 50vw;
+    width: 50%;
     height: 100vh;
     background-image: url(zdj/dog3_trans.png);
     background-repeat: no-repeat;
@@ -57,7 +57,7 @@ nav a:hover {
 
 #right {
     float: left;
-    width: 50vw;
+    width: 50%;
     height: 100vh;
 }
 
