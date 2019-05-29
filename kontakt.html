@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="formularz.css">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Prompt:300&display=swap" rel="stylesheet">
+
+    <a href="http://www.freepik.com">Designed by Freepik</a>
+    <a href="http://www.freepik.com">Designed by macrovector_official / Freepik</a>
+    <a href="http://www.freepik.com">Designed by rawpixel.com / Freepik</a>
+
+
+    <script src="main.js"></script>
+    <title>DOGO</title>
+</head>
+<body>
+    <nav id="navbar">
+        <div><a href="index.html">s. główna</a></div>
+        <div id="logo">
+            <a href="index.html"><img src="zdj/logo/logo.png"></a>
+        </div>
+        <div><a href="#">galeria</a></div>
+    </nav>
+
+    <h1>Zapisz się!</h1>
+
+    <div id="header">
+        <p>Wypełnij formularz</p>
+    </div>
+
+    <section id="form">
+        <form method="post" action="mailto:xxx@xxx.xx" enctype="text/plain"
+                    onsubmit="return sprawdz()" >
+            <table>
+                <tr> <td>Imie i nazwisko: </td>
+                    <td><input name="name" size="30" id="name"/> </td>
+                    <td id="name_error" class="czerwone"></td>
+                </tr>
+                <tr>
+                    <td>Adres e-mail: </td>
+                    <td><input name="email" size ="30" id="email"/></td>
+                    <td id="email_error" class="czerwone"></td>
+                </tr>
+                <tr>
+                    <td>Imie pupila:</td>
+                    <td><input name="wiek" size ="30" id="wiek"/></td>
+                    <td id="wiek_error" class="czerwone"></td>
+                </tr>
+                <tr>
+                    <td>Rasa:</td>
+                    <td>
+                        <select name="kraj" id="kraj">
+                            <option value="wybierz" selected="selected">Brak</option>
+                            <option value="dog">Dog niemiecki</option>
+                            <option value="bokser">Bokser</option>
+                            <option value="york">York</option>
+                            <option value="bulldog">Bulldog francuski</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+
+            <h4>Opieka:</h4>
+            <p>
+                <input name="behav" type="checkbox" id="behav"/>Behawiorysta
+                <input name="kosmetolog" type="checkbox" id="kosmetolog"/>Kosmetolog
+                <input name="wet" type="checkbox" id="wet"/>Weterynarz
+                <span id="produkt_error" class="czerwone"></span>
+            </p>
+
+            <h4>Płatność:</h4>
+            <p>
+                <input name="zaplata" id="zaplata" type="radio" value="euro" />eurocard
+                <input name="zaplata" type="radio" value= "visa" checked="checked" />visa
+                <input name="zaplata" type="radio" value= "przelew" />przelew bankowy
+                <span id="zaplata_error" class="czerwone"></span><br />
+            </p>
+            
+            <input type="submit" value=" Wyślij " />
+            <input type="reset" value=" Anuluj " />
+        </form>
+
+        <div id="zdj"></div>
+
+    </section>
+
+</body>
+</html>
