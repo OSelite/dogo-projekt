@@ -4,31 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Prompt:300&display=swap" rel="stylesheet">
 
+    <!--
     <a href="http://www.freepik.com">Designed by Freepik</a>
     <a href="http://www.freepik.com">Designed by macrovector_official / Freepik</a>
     <a href="http://www.freepik.com">Designed by rawpixel.com / Freepik</a>
+    -->
 
-
-    <script src="main.js"></script>
+    <script src="js/main.js"></script>
     <title>DOGO</title>
 </head>
 <body>
+
+    <div id="menuToggle">
+        
+        <input type="checkbox" />
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <ul id="menu">
+            <li><a href="#about-anchor">o nas</a></li>
+            <li><a href="#offer-anchor">oferta</a></li>
+            <li><a href="galeria.html">galeria</a></li>
+            <li><a href="kontakt.html">kontakt</a></li>
+            <li><img alt="" src="zdj/logo/logo.png"></li>
+        </ul>
+    </div>
+
     <nav id="navbar">
+        
         <div><a href="#about-anchor">o nas</a></div>
         <div><a href="#offer-anchor">oferta</a></div>
-        <div id="logo">
-            <a href="index.html"><img src="zdj/logo/logo.png"></a>
+        <div class="logo">
+            <a href="index.html"><img alt="" src="zdj/logo/logo.png"></a>
         </div>
-        <div><a href="#">galeria</a></div>
-        <div><a href="#contact-anchor">kontakt</a></div>
+        <div><a href="galeria.html">galeria</a></div>
+        <div><a href="kontakt.html">kontakt</a></div>
     </nav>
 
     <div id="left"></div>
+
+    <div class="logo">
+        <a href="index.html"><img alt="" src="zdj/logo/logo.png"></a>
+    </div>
 
     <div id="right">
         <h1 class="banner">Dbamy o Twojego<br> zwierzaka!</h1>
@@ -36,7 +60,7 @@
 
     <span id="about-anchor"></span>
 
-    <div id="topdiv"></div>
+    <div class="topdiv"></div>
 
     <section id="about">
         <div id="about-left">
@@ -46,35 +70,35 @@
                 lub bierzesz kolejny łyk kawy w pracy</p>
         </div>
 
-        <div id="aboutcat"></div> 
+        <div id="aboutimg"></div> 
     </section>
 
     <span id="offer-anchor"></span>
 
-    <div id="bottomdiv"></div>
+    <div class="bottomdiv"></div>
 
     <section id="details">
         <div id="health">
             <h1>Zdrowie</h1><br>
-            <img src="zdj/health.png">
+            <img alt="" src="zdj/health.png">
             <p>Zdrowie Twojego zwierzaka<br> 
                 jest dla nas najwazniejsze</p>
         </div>
         <div id="beauty">
             <h1>Pielęgnacja</h1><br>
-            <img src="zdj/beauty.png">
+            <img alt="" src="zdj/beauty.png">
             <p>Warto dbać o urodę,<br> 
                 nie tylko swoją...</p>
         </div>
         <div id="relax">
             <h1>Relax</h1><br>
-            <img src="zdj/relax.png">
+            <img alt="" src="zdj/relax.png">
             <p>Bo szczekanie na listonoszy<br> 
                 jest baaardzo męczące</p>
         </div>
     </section>
 
-    <div id="topdiv"></div>
+    <div class="topdiv"></div>
 
     <section id="team">
         <div class="person1"></div>
@@ -89,9 +113,7 @@
         <span class="under-p">Mozesz być pewny, ze Twój pupil jest w dobrych rękach</span>
     </div>
 
-    <span id="contact-anchor"></span>
-
-    <div id="bottomdiv"></div>
+    <div class="bottomdiv"></div>
 
     <section id="contact">
         <div id="contact-image"></div>
@@ -105,7 +127,7 @@
 
     </section>
 
-    <div id="topdiv"></div>
+    <div class="topdiv"></div>
 
     <section id="join">
         <div id="join-text">

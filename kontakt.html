@@ -4,28 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="formularz.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/formularz.css">
 
 
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Prompt:300&display=swap" rel="stylesheet">
 
-    <a href="http://www.freepik.com">Designed by Freepik</a>
+    <!--<a href="http://www.freepik.com">Designed by Freepik</a>
     <a href="http://www.freepik.com">Designed by macrovector_official / Freepik</a>
-    <a href="http://www.freepik.com">Designed by rawpixel.com / Freepik</a>
+    <a href="http://www.freepik.com">Designed by rawpixel.com / Freepik</a> -->
+    <script src="js/main.js"></script>
+    <script src="js/walidacja.js"></script>
 
-
-    <script src="main.js"></script>
     <title>DOGO</title>
 </head>
 <body>
+
+    <div id="menuToggle">
+    
+        <input type="checkbox" />
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <ul id="menu">
+            <li><a href="index.html">s. glowna</a></li>
+            <li><a href="galeria.html">galeria</a></li>
+            <li><img alt="" src="zdj/logo/logo.png"></li>
+        </ul>
+    </div>
+        
     <nav id="navbar">
         <div><a href="index.html">s. główna</a></div>
-        <div id="logo">
-            <a href="index.html"><img src="zdj/logo/logo.png"></a>
+        <div class="logo">
+            <a href="index.html"><img alt="" src="zdj/logo/logo.png"></a>
         </div>
-        <div><a href="#">galeria</a></div>
+        <div><a href="galeria.html">galeria</a></div>
     </nav>
 
     <h1>Zapisz się!</h1>
@@ -35,32 +51,31 @@
     </div>
 
     <section id="form">
-        <form method="post" action="mailto:xxx@xxx.xx" enctype="text/plain"
-                    onsubmit="return sprawdz()" >
+        <form enctype="text/plain" onsubmit="return sprawdz()" >
             <table>
                 <tr> <td>Imie i nazwisko: </td>
-                    <td><input name="name" size="30" id="name"/> </td>
+                    <td><input name="name" size="30" id="name" required="required"/> </td>
                     <td id="name_error" class="czerwone"></td>
                 </tr>
                 <tr>
                     <td>Adres e-mail: </td>
-                    <td><input name="email" size ="30" id="email"/></td>
+                    <td><input name="email" size ="30" id="email" required="required"/></td>
                     <td id="email_error" class="czerwone"></td>
                 </tr>
                 <tr>
                     <td>Imie pupila:</td>
-                    <td><input name="wiek" size ="30" id="wiek"/></td>
-                    <td id="wiek_error" class="czerwone"></td>
+                    <td><input name="pupil" size ="30" id="pupil" required="required"/></td>
+                    <td id="pupil_error" class="czerwone"></td>
                 </tr>
                 <tr>
                     <td>Rasa:</td>
                     <td>
-                        <select name="kraj" id="kraj">
-                            <option value="wybierz" selected="selected">Brak</option>
-                            <option value="dog">Dog niemiecki</option>
-                            <option value="bokser">Bokser</option>
-                            <option value="york">York</option>
-                            <option value="bulldog">Bulldog francuski</option>
+                        <select name="rasa" id="rasa">
+                            <option value="Inna" selected="selected">Inna</option>
+                            <option value="Dog niemiecki">Dog niemiecki</option>
+                            <option value="Bokser">Bokser</option>
+                            <option value="York">York</option>
+                            <option value="Bulldog francuski">Bulldog francuski</option>
                         </select>
                     </td>
                 </tr>
@@ -68,27 +83,34 @@
 
             <h4>Opieka:</h4>
             <p>
-                <input name="behav" type="checkbox" id="behav"/>Behawiorysta
-                <input name="kosmetolog" type="checkbox" id="kosmetolog"/>Kosmetolog
-                <input name="wet" type="checkbox" id="wet"/>Weterynarz
+                <input name="opieka" type="checkbox" id="behav"/>Behawiorysta
+                <input name="opieka" type="checkbox" id="kosmetolog"/>Kosmetolog
+                <input name="opieka" type="checkbox" id="wet"/>Weterynarz
                 <span id="produkt_error" class="czerwone"></span>
             </p>
 
             <h4>Płatność:</h4>
             <p>
-                <input name="zaplata" id="zaplata" type="radio" value="euro" />eurocard
-                <input name="zaplata" type="radio" value= "visa" checked="checked" />visa
-                <input name="zaplata" type="radio" value= "przelew" />przelew bankowy
+                <input name="zaplata" id="zaplata" type="radio" value="Eurocard" />eurocard
+                <input name="zaplata" type="radio" value= "Visa" checked="checked" />visa
+                <input name="zaplata" type="radio" value= "Przelew bankowy" />przelew bankowy
                 <span id="zaplata_error" class="czerwone"></span><br />
             </p>
             
-            <input type="submit" value=" Wyślij " />
-            <input type="reset" value=" Anuluj " />
+            <input type="submit" value="Wyślij" />
+            <input type="button" onclick="return saveData()" value="Zapisz do Session Storage"/>
+            <input type="reset" value="Wyczysc" onclick="return clearData();" />
         </form>
 
         <div id="zdj"></div>
 
     </section>
 
+    
+    <div>
+        <h1 class="join">Lokalizacja</h1>
+    </div>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2317.364868779368!2d18.52811171574159!3d54.491787080234985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fda0c42462dec3%3A0x7d5cf843a8e96c97!2sHotel+dla+zwierz%C4%85t!5e0!3m2!1spl!2spl!4v1559738123634!5m2!1spl!2spl" allowfullscreen></iframe>
 </body>
 </html>

@@ -1,0 +1,77 @@
+html, body {
+    font-family: 'Indie Flower', serif;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  a {
+    color: #4ab19a;
+  }
+  
+  .clear {
+    clear: both;
+    float: none;
+    width: 100%;
+  }
+  
+  .container {
+    max-width: 1170px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 10%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .container .gallery a img {
+    float: left;
+    width: 25%;
+    height: auto;
+    border: 2px solid #fff;
+    -webkit-transition: -webkit-transform .15s ease;
+    -moz-transition: -moz-transform .15s ease;
+    -o-transition: -o-transform .15s ease;
+    -ms-transition: -ms-transform .15s ease;
+    transition: transform .15s ease;
+  }
+
+  .container .gallery a:hover img {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    z-index: 5;
+  }
+
+  .container .gallery a.big img {
+    width: 50%;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+  
+  .align-center {
+    text-align: center;
+  }
+
+  .foot {
+      font-size: 20px;
+      font-family: 'Prompt', sans-serif;
+  }
+
+@media screen and (max-width: 800px) {
+    .container {
+        padding-top: 15%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        padding-top: 18%;
+    }
+}
