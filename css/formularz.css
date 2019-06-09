@@ -25,6 +25,10 @@ td{
     padding: 5px;
 }
 
+h4 {
+    font-size: 20px;
+}
+
 .czerwone {
     color: red;
 }

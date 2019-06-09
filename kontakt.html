@@ -16,6 +16,8 @@
     <a href="http://www.freepik.com">Designed by rawpixel.com / Freepik</a> -->
     <script src="js/main.js"></script>
     <script src="js/walidacja.js"></script>
+    <script src="js/storage.js"></script>
+
 
     <title>DOGO</title>
 </head>
@@ -89,6 +91,19 @@
                 <span id="produkt_error" class="czerwone"></span>
             </p>
 
+            <h4>Data:</h4>
+            <table>
+                <tr>
+                    <td>Od:</td>
+                    <td><input type="date" name="start" id="start"/></td>
+                </tr>
+                <tr>
+                    <td>Do:</td>
+                    <td><input type="date" name="end" id="end"/></td>
+                    <td id="date_error" class="czerwone"></td>
+                </tr>
+            </table>
+
             <h4>Płatność:</h4>
             <p>
                 <input name="zaplata" id="zaplata" type="radio" value="Eurocard" />eurocard
@@ -98,7 +113,7 @@
             </p>
             
             <input type="submit" value="Wyślij" />
-            <input type="button" onclick="return saveData()" value="Zapisz do Session Storage"/>
+            <input type="button" onclick="return saveData()" value="Zapisz do Session&Local Storage"/>
             <input type="reset" value="Wyczysc" onclick="return clearData();" />
         </form>
 

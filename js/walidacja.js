@@ -31,12 +31,20 @@ function sprawdzPole(pole_id,obiektRegex) {
 
    function pobierz_radio(nazwa_radio) {
        var obiekt = document.getElementsByName(nazwa_radio);
-
+        var i = 0;
        for(i<0; i<obiekt.length; i++) {
            wybrany = obiekt[i].checked;
            if(wybrany) return obiekt[i].value;
        }
        return "";
+   }
+
+   function pobierzDate(inputNazwa) {
+       var obiekt = document.getElementById(inputNazwa).value;
+
+        var data = new Date(obiekt);
+
+        return data;
    }
 
    function sprawdz()
@@ -101,6 +109,18 @@ function sprawdzPole(pole_id,obiektRegex) {
    }else document.getElementById("zaplata_error").innerHTML = "";
 
    dane += "\nSposob platnosci: " + pobierz_radio("zaplata");
+
+   var start = pobierzDate("start");
+   var end = pobierzDate("end");
+
+   if(start.getTime() < end.getTime() && start > Date.now()) {
+    document.getElementById("date_error").innerHTML = "";
+    dane += "\nTermin:\nod " + start.toString() + "\ndo " + end.toString();
+   }
+   else {
+    ok = false;
+    document.getElementById("date_error").innerHTML = "Niepoprawnie ustawiles date!";
+   }
 
    if(ok) {
     if (window.confirm(dane)) return true;
