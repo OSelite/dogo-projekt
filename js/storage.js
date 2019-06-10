@@ -30,7 +30,7 @@ function sprawdz_box(box_id) {
   function saveData() {
     var ok = true;
   
-    obiektNazw = /^[a-zA-Z]{2,20}$/; //wyrażenie regularne dla nazwiska
+    obiektNazw = /^[A-ZŁŚ]{1}+[a-ząęółśżźćń]+$/; //wyrażenie regularne dla nazwiska
      obiektemail =
      /^([a-zA-Z0-9])+([.a-zA-Z0-9_-])*@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-]+)+/;
   

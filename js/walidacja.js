@@ -54,7 +54,7 @@ function sprawdzPole(pole_id,obiektRegex) {
    var ok=true; //zmienna informująca o poprawnym wypełnieniu formularza
    //Definicje odpowiednich wyrażeń regularnych dla sprawdzenia
    //poprawności danych wprowadzonych do pól tekstowych
-   obiektNazw = /^[a-zA-Z]{2,20}$/; //wyrażenie regularne dla nazwiska
+   obiektNazw = /^[a-zA-Z]{3,}\s+[a-zA-Z]{3,}$/; //wyrażenie regularne dla nazwiska
    obiektemail =
    /^([a-zA-Z0-9])+([.a-zA-Z0-9_-])*@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-]+)+/;
 
@@ -64,7 +64,7 @@ function sprawdzPole(pole_id,obiektRegex) {
    if (!sprawdzPole("name",obiektNazw))
    { ok=false;
     document.getElementById("name_error").innerHTML=
-   "Wpisz poprawnie nazwisko!";
+   "Wpisz poprawnie imie i nazwisko!";
    }
    else {
        document.getElementById("name_error").innerHTML="";
